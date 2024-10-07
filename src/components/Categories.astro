@@ -1,0 +1,54 @@
+---
+import Bread from "../icons/Bread.astro";
+import Cake from "../icons/Cake.astro";
+import Coffe from "../icons/Coffe.astro"
+import IceCream from "../icons/IceCream.astro"
+---
+
+<main>
+  <h2 class="categories-title">Catálogo</h2>
+  <div class="categories-filter">
+    <div class="categories-icons">
+      <div><Bread/></div>
+      <div><Cake/></div>
+      <div><Coffe/></div>
+      <div><IceCream/></div>
+    </div>
+  </div>
+  <div class="categories-show">Visualizacion</div>
+</main>
+
+<style>
+main{
+  width: 100%;
+}
+
+.categories-filter{
+  height: 150px;
+}
+
+.categories-title{
+  width: 100%;
+  text-align: center;
+  letter-spacing: 10px;
+  font-weight: 600;
+}
+
+.categories-show{
+  background-color: #fcfcfc;
+  height: 600px;
+}
+
+.categories-icons{
+  display: flex;
+  justify-content: space-evenly;
+  div{
+    cursor: pointer;
+    &:hover{
+      background-color: #66645d;
+      border-radius: 10px;
+      scale: 110%;
+    }
+  }
+}
+</style>
