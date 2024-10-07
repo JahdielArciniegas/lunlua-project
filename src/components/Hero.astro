@@ -1,0 +1,57 @@
+---
+
+---
+
+<main class="main">
+  <div class="hero">
+    <span class="hero_background"></span>
+    <div class="hero_intro">
+      <h3 class="hero_intro-welcome">Bienvenidos</h3>
+      <h2 class="hero_intro-text">No solo hacemos postres, Creamos tu Felicidad</h2>
+    </div>
+  </div>
+</main>
+
+<style>
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero_background {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 600px;
+    background-image: url(./Hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -10;
+  }
+
+  .hero{
+    width: 85%;
+    height: 600px;
+  }
+
+  .hero_intro{
+    display: flex;
+    flex-direction:column;
+    height: 100%;
+    justify-content: center;
+    padding-left: 30px;
+    width: 500px;
+    letter-spacing: 5px;
+  }
+
+  .hero_intro-welcome{
+    height: 5px;
+    font-weight: bold;
+  }
+
+  .hero_intro-text{
+    font-weight: bolder;
+  }
+</style>
